@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bhromaon – Safe Travel Anywhere</title>
+  <meta name="description" content="Bhromaon helps you search, select and book safe travel destinations anywhere.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&amp;family=Montserrat:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Bhromaon</h1>
+      <p class="hero__tagline">Safe Travel Anywhere</p>
+
+      <!-- Search form  -->
+      <form class="search" action="#" novalidate>
+
+          <label class="visually-hidden" for="destination">Travel destination</label>
+          <input class="search__input" type="text" id="destination" name="destination"
+                placeholder="Search Your Travel Destination" required minlength="3" maxlength="60"
+                pattern="[A-Za-zÀ-ÿ\s,.'\-]+" autocomplete="off" aria-describedby="destination-error">
+          <button class="search__button" type="submit">Search <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+          <p class="search__error" id="destination-error" role="alert" hidden></p>
+
+      </form>
+
+    </div>
+
+    <a class="hero__scroll" href="#why">Scroll Down <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
     
+  </header>
+
+  <!-- Nav -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#">Bhromaon</a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#why">Who we are</a></li>
+        <li><a class="nav__link" href="#steps">What we do</a></li>
+        <li><a class="nav__link" href="#places">Travel with us</a></li>
+        <li><a class="nav__link" href="#footer">Contact us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main>
     
+    <section class="why" id="why">
+
+          <div class="container">
+            <h2 class="why__title">Why Choose Us</h2>
+            <p class="why__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
+            <p class="why__text">Dislike men who are so beguiled and demoralized by the charms of pleasure of the moment and so blinded by desire.</p>
+            <a class="btn" href="#places">Explore places</a>
+          </div>
+
+    </section>
+
+    <!-- Steps -->
+    <section class="steps" id="steps" aria-label="How it works">
+
+            <div class="container">
+              <ol class="steps__list">
+                <li class="steps__item">
+                  <i class="steps__icon steps__icon--search fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                  <h3 class="steps__title">Search Places</h3>
+                </li>
+
+                <li class="steps__item">
+                  <i class="steps__icon steps__icon--select fa-regular fa-circle-check" aria-hidden="true"></i>
+                  <h3 class="steps__title">Select Places</h3>
+                </li>
+
+                <li class="steps__item">
+                  <i class="steps__icon steps__icon--book fa-regular fa-thumbs-up" aria-hidden="true"></i>
+                  <h3 class="steps__title">Book &amp; Enjoy</h3>
+                </li>
+
+              </ol>
+              
+            </div>
+    </section>
+
+    <!-- Places -->
+    <div id="places">
+
+      <div class="place place--villa">
+
+            <div class="container">
+              <article class="card">
+                <p class="card__country">Spain</p>
+                <h2 class="card__title" id="place-1">Grand Spain Madrid</h2>
+                <p class="card__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account born and I account will give you a complete account of the system</p>
+                <a class="btn" href="#">Book now</a>
+              </article>
+              
+            </div>
+
+      </div>
+
+      <!-- Card on the right -->
+      <div class="place place--coast">
+
+            <div class="container">
+              <article class="card card--right">
+                <p class="card__country">Spain</p>
+                <h2 class="card__title" id="place-2">Grand Spain Madrid</h2>
+                <p class="card__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account born and I account will give you a complete account of the system</p>
+                <a class="btn" href="#">Book now</a>
+              </article>
+            </div>
+
+      </div>
+
+    </div>
+
+    <!-- Reviews -->
+    <section class="reviews" aria-labelledby="reviews-title">
+
+          <div class="container">
+            <h2 class="reviews__title" id="reviews-title">What Our Tourist Say</h2>
+            <figure class="review">
+              <div class="review__photo" role="img" aria-label="A hiker looking over a misty mountain range"></div>
+              <div class="review__body">
+                <p class="review__name">Sam Sumon</p>
+                <blockquote class="review__quote">
+                  <i class="review__mark fa-solid fa-quote-left" aria-hidden="true"></i>
+                  <p>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account born and I account will give you a complete account of the system was account born and I account will give you a nai the complete account of the system</p>
+                </blockquote>
+              </div>
+            </figure>
+          </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+
+        <p class="footer__logo">Bhromaon</p>
+        <p class="footer__tagline">Safe Travel Anywhere</p>
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a></li>
+        </ul>
+
+  </footer>
+
+      <!-- Form validation script -->
+      <script src="js/main.js"></script>
 </body>
 </html>
